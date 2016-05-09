@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1462790163 source:c:\users\sdaniel\desktop\einfo10-15\15okt\fejvagyiras\main.cpp
+	<iostream>
+	<fstream>
+	<string>
+	<cmath>
+	<stdlib.h>
+	<windows.h>
+	<time.h>
+
