@@ -107,21 +107,32 @@ int main(){
 
     cout<<endl;
     cout<<"6. Feladat"<<endl;
-/*
-    ifstream fileInp("kiserlet.txt");
-    if(fileInp.is_open()){
-        string line="";
-        string sec="";
-        while(!fileInp.eof()){
-            getline(fileInp,line);
-            if(getline(fileInp,sec)==line){
-                while(!fileInp.eof()){
 
-                }
+    ifstream fileInp("kiserlet.txt");
+    int index=0;
+    int counter=0;
+    if(fileInp.is_open()){
+        int lineCount=0;
+        while(!fileInp.eof()){
+            string line="";
+            string line2="";
+            string line3="";
+
+            getline(fileInp,line);
+            getline(fileInp,line2);
+            getline(fileInp,line2);
+            lineCount++;
+            if(line=="F"&&line2=="F"&&line3=="F"){
+                counter++;
+                index=lineCount;
+            }else{
+                counter=0;
             }
         }
     }
-*/
+
+    cout<<counter<<" "<<index<<endl;
+
     cout<<endl;
     cout<<"7. Feladat"<<endl;
 
